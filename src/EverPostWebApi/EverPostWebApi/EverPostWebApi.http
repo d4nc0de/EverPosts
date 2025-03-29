@@ -1,0 +1,6 @@
+@EverPostWebApi_HostAddress = http://localhost:5135
+
+GET {{EverPostWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
