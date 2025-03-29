@@ -1,5 +1,6 @@
 using EverPostWebApi.Commons;
 using EverPostWebApi.Commons.Dbcontext;
+using EverPostWebApi.Config;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -16,6 +17,10 @@ builder.Services.AddDbContext<EverPostContext>(options =>
 });
 
 builder.Services.AddSingleton<Utilities>();
+
+//middleware
+//builder.Services.AddTransient<ExceptionMiddleware>();
+//builder.Services.AddLogging();
 
 builder.Services.AddAuthentication(config =>
 {
@@ -55,7 +60,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EverPostWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2498610ca7b9b04bf4c9bce4b02d227cec2a2a4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e714c8baf76639508ac126d5d9c4ba31ccd49c48")]
 [assembly: System.Reflection.AssemblyProductAttribute("EverPostWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EverPostWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

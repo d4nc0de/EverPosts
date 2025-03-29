@@ -21,6 +21,13 @@ namespace EverPostWebApi.Controllers
             _utilities = utilities;
         }
 
+        [HttpGet("Exception")]
+        public async Task<ActionResult> ThrowException() 
+        {
+            throw new Exception("tst");
+        }
+
+
         [HttpPost("Register")]
         public async Task<ActionResult> RegisterUser(UserDto objeto)
         {
@@ -28,7 +35,8 @@ namespace EverPostWebApi.Controllers
             {
                 UserName = objeto.Name,
                 Mail = objeto.Mail,
-                Pass = _utilities.encryptSHA256(objeto.Pass)
+                Pass = _utilities.encryptSHA256(objeto.Pass),
+                Status = "ACT"
             };
             await _everPostContext.Users.AddAsync(modeloUser);
             await _everPostContext.SaveChangesAsync();

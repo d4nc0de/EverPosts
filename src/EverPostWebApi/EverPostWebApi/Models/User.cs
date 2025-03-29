@@ -23,6 +23,6 @@ public class User
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
     [Required]
     [StringLength(3)]
-    public int Status { get; set; } 
+    public string Status { get; set; } 
 }
 
