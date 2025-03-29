@@ -1,9 +1,11 @@
 using EverPostWebApi.Commons;
 using EverPostWebApi.Commons.Dbcontext;
 using EverPostWebApi.Config;
+using EverPostWebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Net.Sockets;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,11 +18,10 @@ builder.Services.AddDbContext<EverPostContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Dev"));
 });
 
-builder.Services.AddSingleton<Utilities>();
 
-//middleware
-//builder.Services.AddTransient<ExceptionMiddleware>();
-//builder.Services.AddLogging();
+// Useful injections
+builder.Services.AddSingleton<Utilities>();
+builder.Services.AddScoped<IUserService<User>, UserService>();
 
 builder.Services.AddAuthentication(config =>
 {

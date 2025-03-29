@@ -1,6 +1,7 @@
 ﻿using EverPostWebApi.Commons;
 using EverPostWebApi.Commons.Dbcontext;
 using EverPostWebApi.DTOs;
+using EverPostWebApi.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +14,10 @@ namespace EverPostWebApi.Controllers
     [ApiController]
     public class AccessController : ControllerBase
     {
-        private readonly EverPostContext _everPostContext;
-        private readonly Utilities _utilities;
-        public AccessController(EverPostContext everPostContext, Utilities utilities)
+        private readonly IUserService<User> _userService;
+        public AccessController( IUserService<User> userService)
         {
-            _everPostContext = everPostContext;
-            _utilities = utilities;
+            _userService = userService;
         }
 
         [HttpGet("Exception")]
@@ -29,33 +28,23 @@ namespace EverPostWebApi.Controllers
 
 
         [HttpPost("Register")]
-        public async Task<ActionResult> RegisterUser(UserDto objeto)
+        public async Task<ActionResult> RegisterUser(UserDto userDto)
         {
-            var modeloUser = new User
+            var Result = await _userService.RegisterUser(userDto);
+            if (!Result)
             {
-                UserName = objeto.Name,
-                Mail = objeto.Mail,
-                Pass = _utilities.encryptSHA256(objeto.Pass),
-                Status = "ACT"
-            };
-            await _everPostContext.Users.AddAsync(modeloUser);
-            await _everPostContext.SaveChangesAsync();
-
-            if (modeloUser.UserId != 0)
-            {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = Result });
             }
             else
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = Result });
             }
         }
 
         [HttpPost("Login")]
-        public async Task<ActionResult> Login(LoginDto objeto)
+        public async Task<ActionResult> Login(LoginDto loginDto)
         {
-            var userFind = await _everPostContext.Users.Where(
-                u => u.Mail == objeto.Mail && u.Pass == _utilities.encryptSHA256(objeto.Pass)).FirstOrDefaultAsync();
+            var userFind = await _userService.Login(loginDto);
 
             if (userFind == null)
             {
@@ -63,7 +52,7 @@ namespace EverPostWebApi.Controllers
             }
             else 
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, token = _utilities.GenerateJWT(userFind) });
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, token = _userService.GenerateJWT(userFind), userFind.UserName });
             }
         }
     }
