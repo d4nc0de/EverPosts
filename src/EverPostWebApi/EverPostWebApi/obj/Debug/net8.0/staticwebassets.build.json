@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qBGTPvGPc2Tdfx+6vXojV9NWUXPjwm//bqSh+I3blgs=",
+  "Source": "EverPostWebApi",
+  "BasePath": "_content/EverPostWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
