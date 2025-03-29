@@ -168,3 +168,4 @@ C:\Users\Admin\source\repos\EverPosts\src\EverPostWebApi\EverPostWebApi\obj\Debu
 C:\Users\Admin\source\repos\EverPosts\src\EverPostWebApi\EverPostWebApi\obj\Debug\net8.0\EverPostWebApi.pdb
 C:\Users\Admin\source\repos\EverPosts\src\EverPostWebApi\EverPostWebApi\obj\Debug\net8.0\EverPostWebApi.genruntimeconfig.cache
 C:\Users\Admin\source\repos\EverPosts\src\EverPostWebApi\EverPostWebApi\obj\Debug\net8.0\ref\EverPostWebApi.dll
+C:\Users\Admin\source\repos\EverPosts\src\EverPostWebApi\EverPostWebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
