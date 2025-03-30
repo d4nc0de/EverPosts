@@ -12,10 +12,5 @@ namespace EverPostWebApi.Commons.Dbcontext
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Categorie> Categories { get; set; }
         public DbSet<RelPostCategorie> RelPostCategories { get; set; }
-        
-
-
-
-
     }
 }

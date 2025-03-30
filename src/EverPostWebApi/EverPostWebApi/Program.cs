@@ -1,6 +1,9 @@
+using ChannelMonitoring.Utils;
 using EverPostWebApi.Commons;
 using EverPostWebApi.Commons.Dbcontext;
 using EverPostWebApi.Config;
+using EverPostWebApi.DTOs;
+using EverPostWebApi.Repository;
 using EverPostWebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +24,11 @@ builder.Services.AddDbContext<EverPostContext>(options =>
 
 // Useful injections
 builder.Services.AddSingleton<Utilities>();
+builder.Services.AddSingleton<ADOHelper>();
 builder.Services.AddScoped<IUserService<User>, UserService>();
+builder.Services.AddKeyedScoped<IRepository<User, LoginDto,UserDto>, UserRepository>("UserRepositoryINJ");
+builder.Services.AddKeyedScoped<IRepository<Post,PostGetDto,PostCreateDto>, PostRepository>("PostRepositoryINJ");
+
 
 builder.Services.AddAuthentication(config =>
 {
