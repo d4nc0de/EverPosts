@@ -22,9 +22,10 @@ namespace EverPostWebApi.Repository
             var Coments = await _everPostContext.Comments.FromSqlInterpolated($"EXEC Sp_GetCommentsPagined {filterId},{pageNumber},{PageSize}").ToListAsync();
             return Coments;
         }
-        public Task<Comment> Add(Comment dto)
+        public async Task<Comment> Add(Comment comment)
         {
-            throw new NotImplementedException();
+            var Coments = await _everPostContext.Comments.FromSqlInterpolated($"EXEC Sp_CreateComment {comment.Content},{comment.PostId},{comment.UserId}").ToListAsync();
+            return Coments.FirstOrDefault();
         }
 
         public Task<RelPostCategorie> AddRelation(int obj1, int obj2)

@@ -38,7 +38,21 @@ namespace EverPostWebApi.Services
         }
         public Task<Comment> AddComment(Comment comment)
         {
-            throw new NotImplementedException();
+            try 
+            {
+                var commnetInserted = _repository.Add(comment);
+
+                if (commnetInserted != null) 
+                {
+                    return commnetInserted;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ha ocurrido un error Insertando el comentario: " + ex.Message);
+            }
+            
         }
 
     }

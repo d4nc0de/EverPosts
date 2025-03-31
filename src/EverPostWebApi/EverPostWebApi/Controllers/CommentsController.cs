@@ -50,5 +50,37 @@ namespace EverPostWebApi.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<ActionResult<Comment>> CreateComment(Comment comment) 
+        {
+            var response = new BaseResponse<Comment>();
+            try
+            {
+                var commentInserted = await _commentService.AddComment(comment);
+                if (commentInserted == null)
+                {
+                    response.Success = false;
+                    response.Message = "No se encontraron Comentarios";
+                    return Ok(response);
+                }
+                else
+                {
+                    response.Success = true;
+                    response.Message = "Comentarios recibidos satisfactoriamente";
+                    response.Data = commentInserted;
+                    return Ok(response);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = "Ah ocurrido un error al tratar de consultar los Comentarios";
+                response.Errors.Add(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, response);
+            }
+
+        }
+
     }
 }
