@@ -1,4 +1,6 @@
-﻿using EverPostWebApi.DTOs;
+﻿using Azure;
+using EverPostWebApi.Commons;
+using EverPostWebApi.DTOs;
 using EverPostWebApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -21,62 +23,128 @@ namespace EverPostWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<PostsPaginatedDTO>> GetPosts([FromQuery] int  pageNumber, [FromQuery] int PageSize) 
         {
-            var postsPaginatedDTO = _postService.GetAllPosts(pageNumber, PageSize);
-            if (postsPaginatedDTO == null)
+            var response = new BaseResponse<PostsPaginatedDTO>();
+            try
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
+                var postsPaginatedDTO = await _postService.GetAllPosts(pageNumber, PageSize);
+                if (postsPaginatedDTO == null)
+                {
+                    response.Success = false;
+                    response.Message = "No se encontraron posts";
+                    return Ok(response);
+                }
+                else
+                {
+                    response.Success = true;
+                    response.Message = "Post recibidos satisfactoriamente";
+                    response.Data = postsPaginatedDTO;
+                    return Ok(response);
+                }
+
             }
-            else
+            catch (Exception ex) 
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, postsPaginatedDTO });
+                response.Success = false;
+                response.Message = "Ah ocurrido un error al tratar de consultar los posts";
+                response.Errors.Add(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, response);
             }
         }
 
         [HttpPost]
         public async Task<ActionResult<Post>> AddPost([FromForm]UploadImage image, [FromForm] string postToCreateJson) 
         {
-            var postToCreate = JsonSerializer.Deserialize<PostCreateDto>(postToCreateJson, new JsonSerializerOptions
+            var response = new BaseResponse<Post>();
+            try
             {
-                PropertyNameCaseInsensitive = true
-            });
+                var postToCreate = JsonSerializer.Deserialize<PostCreateDto>(postToCreateJson, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
 
-            var postInserted = await _postService.AddPost(image, postToCreate);
-            if (postInserted == null)
-            {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
+                var postInserted = await _postService.AddPost(image, postToCreate);
+                if (postInserted != null)
+                {
+                    response.Success = true;
+                    response.Message = "Post agregado satisfactoriamente";
+                    response.Data = postInserted;
+                    return Ok(response);
+                }
+                else
+                {
+                    response.Success = false;
+                    response.Message = "Ah ocurrido un error al tratar de Añadir el post";
+                    return StatusCode(StatusCodes.Status500InternalServerError, response);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, postInserted });
+                response.Success = false;
+                response.Message = "Ah ocurrido un error al tratar de Añadir el post";
+                response.Errors.Add(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, response);
             }
-        
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePost(int id) 
         {
-            var result = await _postService.DeletePost(id);
-            if (!result) 
+            var response = new BaseResponse<string>();
+            try
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
+                var result = await _postService.DeletePost(id);
+                if (result)
+                {
+                    response.Success = true;
+                    response.Message = "Post eliminado satisfactoriamente";
+                    response.Data = "";
+                    return Ok(response);
+                }
+                else 
+                {
+                    response.Success = false;
+                    response.Message = "Ah ocurrido un error al tratar de eliminar el post";
+                    return StatusCode(StatusCodes.Status500InternalServerError, response);
+                }
+                
             }
-            else
+            catch (Exception ex) 
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
+                response.Success = false;
+                response.Message = "Ah ocurrido un error al tratar de eliminar el post";
+                response.Errors.Add(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, response);
             }
         }
 
         [HttpPut]
         public async Task<IActionResult>UpdatePost(PostUpdateDto postUpdateDto)
         {
-            var result = await _postService.EditPost(postUpdateDto);
-            if (!result)
+            var response = new BaseResponse<string>();
+            try
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
+                var result = await _postService.EditPost(postUpdateDto);
+                if (result)
+                {
+                    response.Success = true;
+                    response.Message = "Post editado satisfactoriamente";
+                    response.Data = "";
+                    return Ok(response);
+                }
+                else
+                {
+                    response.Success = false;
+                    response.Message = "Ah ocurrido un error al tratar de editar el post";
+                    return StatusCode(StatusCodes.Status500InternalServerError, response);
+                }
+
             }
-            else
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
+                response.Success = false;
+                response.Message = "Ah ocurrido un error al tratar de editar el post";
+                response.Errors.Add(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, response);
             }
         }
     }

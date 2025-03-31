@@ -15,21 +15,28 @@ namespace EverPostWebApi.Services
         }
         public async Task<PostsPaginatedDTO> GetAllPosts(int pageNumber, int PageSize)
         {
-            var posts = await _repository.Get(pageNumber, PageSize);
-            if (posts.Count() == 0 || posts.Count() == null) 
+            try
             {
-                return null;
-            }
+                var posts = await _repository.Get(pageNumber, PageSize);
+                if (posts.Count() == 0 || posts.Count() == null)
+                {
+                    return null;
+                }
 
-            var postPaginatedDto = new PostsPaginatedDTO
+                var postPaginatedDto = new PostsPaginatedDTO
+                {
+                    Data = posts.ToList(),
+                    TotalRecords = posts.Count(),
+                    Page = pageNumber,
+                    PageSize = PageSize,
+                    TotalPages = posts.Count() / PageSize
+                };
+                return postPaginatedDto;
+            }
+            catch (Exception ex) 
             {
-                Data = posts.ToList(),
-                TotalRecords = posts.Count(),
-                Page = pageNumber,
-                PageSize = PageSize,
-                TotalPages = posts.Count() / PageSize
-            };
-            return postPaginatedDto;
+                throw new Exception("Ah ocurrido un error tratando de añadir el post: " + ex.Message);
+            }
         }
 
         public async Task<Post> GetPost(int id)
@@ -43,64 +50,87 @@ namespace EverPostWebApi.Services
         }
         public async Task<Post> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate)
         {
+            try
+            {
+                var Route = string.Empty;
+                var RelativeRoute = string.Empty;
+                if (imageToUpload.Archivo.Length > 0)
+                {
+                    var ArchiveName = Guid.NewGuid().ToString() + ".jpg";
+                    Route = $"wwwroot/Uploads/{ArchiveName}";
+                    RelativeRoute = $"/Uploads/{ArchiveName}";
+                    using (var stream = new FileStream(Route, FileMode.Create))
+                    {
+                        await imageToUpload.Archivo.CopyToAsync(stream);
+                    }
+                }
+                postToCreate.Route = RelativeRoute;
+                var PostCreated = await _repository.Add(postToCreate);
 
-            var Route = string.Empty;
-            var RelativeRoute = string.Empty;
-            if (imageToUpload.Archivo.Length > 0) 
-            {
-                var ArchiveName = Guid.NewGuid().ToString() + ".jpg";
-                Route = $"wwwroot/Uploads/{ArchiveName}";
-                RelativeRoute = $"/Uploads/{ArchiveName}";
-                using (var stream = new FileStream(Route, FileMode.Create)) 
+                if (PostCreated != null)
                 {
-                    await imageToUpload.Archivo.CopyToAsync(stream);
+                    foreach (Categorie categorie in postToCreate.Categories)
+                    {
+                        await _repository.AddRelation(PostCreated.PostId, categorie.CategorieId);
+                    }
+                    return PostCreated;
+                }
+                else
+                {
+                    return null;
                 }
             }
-            postToCreate.Route = RelativeRoute;
-            var PostCreated = await _repository.Add(postToCreate);
+            catch (Exception ex) 
+            {
+                throw new Exception("Ah ocurrido un error tratando de añadir el post: " + ex.Message);
+            }
             
-            if (PostCreated != null)
-            {
-                foreach (Categorie categorie in postToCreate.Categories)
-                {
-                    await _repository.AddRelation(PostCreated.PostId, categorie.CategorieId);
-                }
-                return PostCreated;
-            }
-            else
-            {
-                return null;
-            }
         }
 
         public async Task<bool> DeletePost(int id)
         {
-            var postToDelete = await GetPost(id);
-            if (postToDelete != null)
+            try
             {
-                var PostDeleted = await _repository.Delete(id);
-                if (PostDeleted == null) 
+                var postToDelete = await GetPost(id);
+                if (postToDelete != null)
+                {
+                    var PostDeleted = await _repository.Delete(id);
+                    if (PostDeleted == null)
+                    {
+                        return false;
+                    }
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("Ah ocurrido un error tratando de eliminar el post: " + ex.Message);
+            }
+            
+        }
+
+        public async Task<bool> EditPost(PostUpdateDto postUpdateDto)
+        {
+            try
+            {
+                var ExistPost = await _repository.GetById(postUpdateDto.postId);
+                if (ExistPost == null)
+                {
+                    return false;
+                }
+                var postUpdated = await _repository.Update(postUpdateDto);
+                if (postUpdated == null)
                 {
                     return false;
                 }
                 return true;
             }
-            return false;
-        }
-
-        public async Task<bool> EditPost(PostUpdateDto postUpdateDto)
-        {
-            var ExistPost = await _repository.GetById(postUpdateDto.postId);
-            if (ExistPost == null) 
+            catch (Exception ex) 
             {
-                return false;
+                throw new Exception("Ah ocurrido un error tratando de editar el post: " + ex.Message);
             }
-            var postUpdated = await _repository.Update(postUpdateDto);
-            if (postUpdated == null) 
-            {
-                return false;
-            }
-            return true;
+            
         }
 
     }

@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\postcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\postcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\uploadimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\uploadimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\commons\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\commons\\baseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\repository\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,24 +35,72 @@
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\postupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\postupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\postcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\postcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\postspaginateddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\postspaginateddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\postgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\postgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\config\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\config\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\wwwroot\\uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\wwwroot\\uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\uploadimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\uploadimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\commons\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,18 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\commons\\databaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\commons\\databaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\config\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\config\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,18 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\migrations\\20250329070520_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\migrations\\20250329070520_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|c:\\users\\admin\\source\\repos\\everposts\\src\\everpostwebapi\\everpostwebapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{6764D0E5-AE67-48C7-BB59-0E7D4E8EFC13}|EverPostWebApi\\EverPostWebApi.csproj|solutionrelative:everpostwebapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -134,180 +154,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UploadImage.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UploadImage.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\UploadImage.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UploadImage.cs",
-              "RelativeToolTip": "EverPostWebApi\\DTOs\\UploadImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:40:28.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PostService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\PostService.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Services\\PostService.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\PostService.cs",
-              "RelativeToolTip": "EverPostWebApi\\Services\\PostService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:33:41.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPostService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\IPostService.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Services\\IPostService.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\IPostService.cs",
-              "RelativeToolTip": "EverPostWebApi\\Services\\IPostService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:28:47.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Repository\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Repository\\UserRepository.cs",
               "RelativeToolTip": "EverPostWebApi\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T17:58:11.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RelPostCategorie.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\RelPostCategorie.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\RelPostCategorie.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\RelPostCategorie.cs",
-              "RelativeToolTip": "EverPostWebApi\\Models\\RelPostCategorie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:05:59.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\UserService.cs",
-              "RelativeToolTip": "EverPostWebApi\\Services\\UserService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T15:47:09.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Utilities.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Utilities.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\Utilities.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Utilities.cs",
-              "RelativeToolTip": "EverPostWebApi\\Commons\\Utilities.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T07:37:29.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UserDto.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\UserDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UserDto.cs",
-              "RelativeToolTip": "EverPostWebApi\\DTOs\\UserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:45:07.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Repository\\IRepository.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Repository\\IRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Repository\\IRepository.cs",
               "RelativeToolTip": "EverPostWebApi\\Repository\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T17:50:14.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
+              "Title": "PostsPaginatedDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostsPaginatedDTO.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\PostsPaginatedDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostsPaginatedDTO.cs",
+              "RelativeToolTip": "EverPostWebApi\\DTOs\\PostsPaginatedDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:28:38.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Program.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Program.cs",
               "RelativeToolTip": "EverPostWebApi\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAMwB0AAABuAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAMwCEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T07:53:32.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PostCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostCreateDto.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\PostCreateDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostCreateDto.cs",
-              "RelativeToolTip": "EverPostWebApi\\DTOs\\PostCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\UserService.cs",
+              "RelativeToolTip": "EverPostWebApi\\Services\\UserService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAsAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:09:14.938Z",
+              "WhenOpened": "2025-03-29T15:47:09.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "EverPostWebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\appsettings.json",
-              "RelativeToolTip": "EverPostWebApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-29T07:34:23.783Z",
+              "DocumentIndex": 1,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\PostController.cs",
+              "RelativeToolTip": "EverPostWebApi\\Controllers\\PostController.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAIwFsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:02:41.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\IPostService.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Services\\IPostService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\IPostService.cs",
+              "RelativeToolTip": "EverPostWebApi\\Services\\IPostService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:28:47.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\AccessController.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Controllers\\AccessController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\AccessController.cs",
+              "RelativeToolTip": "EverPostWebApi\\Controllers\\AccessController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAiwCcAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:46:33.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\BaseResponse.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\BaseResponse.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\BaseResponse.cs",
+              "RelativeToolTip": "EverPostWebApi\\Commons\\BaseResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:32:53.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Services\\PostService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\PostService.cs",
+              "RelativeToolTip": "EverPostWebApi\\Services\\PostService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:33:41.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PostRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Repository\\PostRepository.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Repository\\PostRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Repository\\PostRepository.cs",
               "RelativeToolTip": "EverPostWebApi\\Repository\\PostRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAACAAAAAJAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAEwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:07:37.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
+              "Title": "PostUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostUpdateDto.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\PostUpdateDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostUpdateDto.cs",
+              "RelativeToolTip": "EverPostWebApi\\DTOs\\PostUpdateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T04:43:09.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PostCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostCreateDto.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\PostCreateDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostCreateDto.cs",
+              "RelativeToolTip": "EverPostWebApi\\DTOs\\PostCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:09:14.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PostGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostGetDto.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\PostGetDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostGetDto.cs",
+              "RelativeToolTip": "EverPostWebApi\\DTOs\\PostGetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:17:48.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Config\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Config\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Config\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "EverPostWebApi\\Config\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAawB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:57:35.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Services\\IUserService.cs",
@@ -320,33 +366,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PostGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostGetDto.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\PostGetDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\PostGetDto.cs",
-              "RelativeToolTip": "EverPostWebApi\\DTOs\\PostGetDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "DocumentIndex": 19,
+              "Title": "Categorie.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Categorie.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\Categorie.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Categorie.cs",
+              "RelativeToolTip": "EverPostWebApi\\Models\\Categorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:17:48.127Z",
+              "WhenOpened": "2025-03-29T07:19:37.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\User.cs",
-              "RelativeToolTip": "EverPostWebApi\\Models\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAVAAAA",
+              "DocumentIndex": 20,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Post.cs",
+              "RelativeToolTip": "EverPostWebApi\\Models\\Post.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T07:47:30.622Z",
+              "WhenOpened": "2025-03-29T14:05:40.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\.gitignore",
+              "RelativeDocumentMoniker": "EverPostWebApi\\.gitignore",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\.gitignore",
+              "RelativeToolTip": "EverPostWebApi\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-29T13:59:00.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\Uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+              "RelativeDocumentMoniker": "EverPostWebApi\\wwwroot\\Uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\Uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+              "RelativeToolTip": "EverPostWebApi\\wwwroot\\Uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-03-31T02:36:55.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\LoginDto.cs",
@@ -359,7 +430,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "EverPostWebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\appsettings.json",
+              "RelativeToolTip": "EverPostWebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T07:34:23.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UploadImage.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UploadImage.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\UploadImage.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UploadImage.cs",
+              "RelativeToolTip": "EverPostWebApi\\DTOs\\UploadImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:40:28.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Comment.cs",
+              "RelativeToolTip": "EverPostWebApi\\Models\\Comment.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:05:39.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "EverPostWebApi\\DTOs\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:45:07.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Utilities.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\Utilities.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Utilities.cs",
+              "RelativeToolTip": "EverPostWebApi\\Commons\\Utilities.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:37:29.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RelPostCategorie.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\RelPostCategorie.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\RelPostCategorie.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\RelPostCategorie.cs",
+              "RelativeToolTip": "EverPostWebApi\\Models\\RelPostCategorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:05:59.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\User.cs",
+              "RelativeToolTip": "EverPostWebApi\\Models\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:47:30.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "ADOHelper.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\ADOHelper.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\ADOHelper.cs",
@@ -372,20 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Categorie.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Categorie.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\Categorie.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Categorie.cs",
-              "RelativeToolTip": "EverPostWebApi\\Models\\Categorie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T07:19:37.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "Configuracion.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Configuracion.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\Configuracion.cs",
@@ -398,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "Parametro.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Parametro.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\Parametro.cs",
@@ -411,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "DatabaseException.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\DatabaseException.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\DatabaseException.cs",
@@ -424,33 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ExceptionMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Config\\ExceptionMiddleware.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Config\\ExceptionMiddleware.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Config\\ExceptionMiddleware.cs",
-              "RelativeToolTip": "EverPostWebApi\\Config\\ExceptionMiddleware.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAIAzwBgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:57:35.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AccessController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\AccessController.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Controllers\\AccessController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\AccessController.cs",
-              "RelativeToolTip": "EverPostWebApi\\Controllers\\AccessController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAawC4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:46:33.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "EverPostContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Commons\\Dbcontext\\EverPostContext.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Commons\\Dbcontext\\EverPostContext.cs",
@@ -463,33 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\Comment.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Comment.cs",
-              "RelativeToolTip": "EverPostWebApi\\Models\\Comment.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:05:39.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Post.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Post.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Models\\Post.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Models\\Post.cs",
-              "RelativeToolTip": "EverPostWebApi\\Models\\Post.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:05:40.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "20250329070520_InitDB.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Migrations\\20250329070520_InitDB.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Migrations\\20250329070520_InitDB.cs",
@@ -502,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "20250329145240_FixStatusUser.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Migrations\\20250329145240_FixStatusUser.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Migrations\\20250329145240_FixStatusUser.cs",
@@ -515,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "ErrorDetails.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Config\\ErrorDetails.cs",
               "RelativeDocumentMoniker": "EverPostWebApi\\Config\\ErrorDetails.cs",
@@ -524,19 +621,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T15:12:49.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\.gitignore",
-              "RelativeDocumentMoniker": "EverPostWebApi\\.gitignore",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\.gitignore",
-              "RelativeToolTip": "EverPostWebApi\\.gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-03-29T13:59:00.171Z",
               "EditorCaption": ""
             }
           ]
