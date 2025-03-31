@@ -5,7 +5,7 @@ using EverPostWebApi.Repository;
 
 namespace EverPostWebApi.Services
 {
-    public class PostService : IPostService<Post,PostsPaginatedDTO>
+    public class PostService : IPostService<Post,DataPaginatedDTO<Post>>
     {
 
         private readonly IRepository<Post,PostGetDto,PostCreateDto,PostUpdateDto> _repository;
@@ -13,23 +13,23 @@ namespace EverPostWebApi.Services
         {
             _repository = repository;
         }
-        public async Task<PostsPaginatedDTO> GetAllPosts(int pageNumber, int PageSize)
+        public async Task<DataPaginatedDTO<Post>> GetAllPosts(PaginatorDto paginatorDto)
         {
             try
             {
-                var posts = await _repository.Get(pageNumber, PageSize);
+                var posts = await _repository.GetPaginated(paginatorDto.Page, paginatorDto.PageSize);
                 if (posts.Count() == 0 || posts.Count() == null)
                 {
                     return null;
                 }
 
-                var postPaginatedDto = new PostsPaginatedDTO
+                var postPaginatedDto = new DataPaginatedDTO<Post>
                 {
                     Data = posts.ToList(),
                     TotalRecords = posts.Count(),
-                    Page = pageNumber,
-                    PageSize = PageSize,
-                    TotalPages = posts.Count() / PageSize
+                    Page = paginatorDto.Page,
+                    PageSize = paginatorDto.PageSize,
+                    TotalPages = posts.Count() / paginatorDto.PageSize
                 };
                 return postPaginatedDto;
             }

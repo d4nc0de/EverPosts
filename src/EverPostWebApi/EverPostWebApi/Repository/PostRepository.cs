@@ -14,7 +14,7 @@ namespace EverPostWebApi.Repository
             _everPostContext = Dbcontext;
 
         }
-        public async Task<IEnumerable<Post>> Get(int pageNumber,int PageSize)
+        public async Task<IEnumerable<Post>> GetPaginated(int pageNumber,int PageSize)
         {
             var Posts = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_GetPostsPaginated {pageNumber},{PageSize}").ToListAsync();
             return Posts;
@@ -51,6 +51,10 @@ namespace EverPostWebApi.Repository
             return PostDeleted.FirstOrDefault();
         }
 
+        public Task<IEnumerable<Post>> GetPaginatedFilter(int filterId, int pageNumber, int PageSize) 
+        {
+            throw new NotImplementedException();
+        }
 
 
     }

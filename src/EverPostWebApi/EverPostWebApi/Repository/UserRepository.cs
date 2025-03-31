@@ -34,7 +34,7 @@ namespace EverPostWebApi.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<User>> Get(int pageNumber, int PageSize)
+        public Task<IEnumerable<User>> GetPaginated(int pageNumber, int PageSize)
         {
             throw new NotImplementedException();
         }
@@ -49,6 +49,10 @@ namespace EverPostWebApi.Repository
             throw new NotImplementedException();
         }
         public Task<RelPostCategorie> AddRelation(int obj1, int obj2) 
+        {
+            throw new NotImplementedException();
+        }
+        public Task<IEnumerable<User>> GetPaginatedFilter(int filterId, int pageNumber, int PageSize)
         {
             throw new NotImplementedException();
         }

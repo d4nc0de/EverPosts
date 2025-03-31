@@ -28,11 +28,13 @@ builder.Services.AddScoped<ADOHelper>();
 
 //services
 builder.Services.AddScoped<IUserService<User>, UserService>();
-builder.Services.AddScoped<IPostService<Post, PostsPaginatedDTO>, PostService>();
+builder.Services.AddScoped<IPostService<Post, DataPaginatedDTO<Post>>, PostService>();
+builder.Services.AddScoped<ICommentsService<Comment, DataPaginatedDTO<Comment>>, CommentsService>();
 
 //Repositories
 builder.Services.AddKeyedScoped<IRepository<User, LoginDto,UserDto, User>, UserRepository>("UserRepositoryINJ");
 builder.Services.AddKeyedScoped<IRepository<Post, PostGetDto, PostCreateDto, PostUpdateDto>, PostRepository>("PostRepositoryINJ");
+builder.Services.AddKeyedScoped<IRepository<Comment, Comment, Comment, Comment>, CommentsRepository>("CommentRepositoryINJ");
 
 
 builder.Services.AddAuthentication(config =>

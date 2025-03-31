@@ -15,18 +15,18 @@ namespace EverPostWebApi.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
-        private IPostService<Post,PostsPaginatedDTO> _postService;
-        public PostController(IPostService<Post, PostsPaginatedDTO> postService)
+        private IPostService<Post,DataPaginatedDTO<Post>> _postService;
+        public PostController(IPostService<Post, DataPaginatedDTO<Post>> postService)
         {
             _postService = postService;
         }
         [HttpGet]
-        public async Task<ActionResult<PostsPaginatedDTO>> GetPosts([FromQuery] int  pageNumber, [FromQuery] int PageSize) 
+        public async Task<ActionResult<DataPaginatedDTO<Post>>> GetPosts(PaginatorDto paginatorDto) 
         {
-            var response = new BaseResponse<PostsPaginatedDTO>();
+            var response = new BaseResponse<DataPaginatedDTO<Post>>();
             try
             {
-                var postsPaginatedDTO = await _postService.GetAllPosts(pageNumber, PageSize);
+                var postsPaginatedDTO = await _postService.GetAllPosts(paginatorDto);
                 if (postsPaginatedDTO == null)
                 {
                     response.Success = false;

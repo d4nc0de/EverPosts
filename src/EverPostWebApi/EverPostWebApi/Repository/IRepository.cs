@@ -2,7 +2,8 @@
 {
     public interface IRepository<Tentity,Tg,Tin,Te>
     {
-        Task<IEnumerable<Tentity>> Get(int pageNumber, int PageSize);
+        Task<IEnumerable<Tentity>> GetPaginated(int pageNumber, int PageSize);
+        Task<IEnumerable<Tentity>> GetPaginatedFilter(int filterId,int pageNumber, int PageSize);
         Task<Tentity> GetById(int id );
         Task<Tentity> GetByFilter(Tg dto);
         Task<Tentity> Add(Tin dto);

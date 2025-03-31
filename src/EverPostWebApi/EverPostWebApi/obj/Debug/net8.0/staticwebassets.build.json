@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w2pXG3j6tw0aT05tXBknYsev/IvgbirgKXlGzVpbkqI=",
+  "Hash": "60wDgYo9/oXvLk18BX14bDYc0sPxoC6a3ubrdX/rcaw=",
   "Source": "EverPostWebApi",
   "BasePath": "_content/EverPostWebApi",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\642ea534-0551-4b97-8e74-dd73a99a654a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\Uploads\\9fcae4f7-42f4-4a50-b431-9af7f24737d4.jpg",
+      "SourceId": "EverPostWebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\",
+      "BasePath": "_content/EverPostWebApi",
+      "RelativePath": "Uploads/9fcae4f7-42f4-4a50-b431-9af7f24737d4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\9fcae4f7-42f4-4a50-b431-9af7f24737d4.jpg"
     }
   ]
 }

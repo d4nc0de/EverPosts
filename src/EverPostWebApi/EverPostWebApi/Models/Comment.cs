@@ -12,7 +12,7 @@ public class Comment
     public string Content { get; set; }
 
     [ForeignKey("Post")]
-    public int PostId { get; set; }
+    public int? PostId { get; set; }
     public virtual Post Post { get; set; }
 
     [Required]
@@ -21,7 +21,7 @@ public class Comment
 
     [Required]
     [ForeignKey("User")]
-    public int UserId { get; set; }
+    public int? UserId { get; set; }
     public virtual User User { get; set; }
 
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
