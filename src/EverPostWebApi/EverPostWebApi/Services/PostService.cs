@@ -5,36 +5,58 @@ using EverPostWebApi.Repository;
 
 namespace EverPostWebApi.Services
 {
-    public class PostService : IPostService<Post>
+    public class PostService : IPostService<Post,PostsPaginatedDTO>
     {
 
-        private readonly IRepository<Post,PostGetDto,PostCreateDto> _repository;
-        public PostService([FromKeyedServices("PostRepositoryINJ")]IRepository<Post, PostGetDto, PostCreateDto> repository)
+        private readonly IRepository<Post,PostGetDto,PostCreateDto,PostUpdateDto> _repository;
+        public PostService([FromKeyedServices("PostRepositoryINJ")]IRepository<Post, PostGetDto, PostCreateDto, PostUpdateDto> repository)
         {
             _repository = repository;
         }
-        public Task<IEnumerable<Post>> GetAllPosts(int id)
+        public async Task<PostsPaginatedDTO> GetAllPosts(int pageNumber, int PageSize)
         {
-            throw new NotImplementedException();
+            var posts = await _repository.Get(pageNumber, PageSize);
+            if (posts.Count() == 0 || posts.Count() == null) 
+            {
+                return null;
+            }
+
+            var postPaginatedDto = new PostsPaginatedDTO
+            {
+                Data = posts.ToList(),
+                TotalRecords = posts.Count(),
+                Page = pageNumber,
+                PageSize = PageSize,
+                TotalPages = posts.Count() / PageSize
+            };
+            return postPaginatedDto;
         }
 
-        public Task<Post> GetPost(int id)
+        public async Task<Post> GetPost(int id)
         {
-            throw new NotImplementedException();
+            var post = await _repository.GetById(id);
+            if (post != null) 
+            {
+                return post;
+            }
+            return null;
         }
-        public async Task<bool> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate)
+        public async Task<Post> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate)
         {
+
             var Route = string.Empty;
+            var RelativeRoute = string.Empty;
             if (imageToUpload.Archivo.Length > 0) 
             {
                 var ArchiveName = Guid.NewGuid().ToString() + ".jpg";
-                Route = $"Uploads/{ArchiveName}";
+                Route = $"wwwroot/Uploads/{ArchiveName}";
+                RelativeRoute = $"/Uploads/{ArchiveName}";
                 using (var stream = new FileStream(Route, FileMode.Create)) 
                 {
                     await imageToUpload.Archivo.CopyToAsync(stream);
                 }
             }
-            postToCreate.Route = Route;
+            postToCreate.Route = RelativeRoute;
             var PostCreated = await _repository.Add(postToCreate);
             
             if (PostCreated != null)
@@ -43,22 +65,42 @@ namespace EverPostWebApi.Services
                 {
                     await _repository.AddRelation(PostCreated.PostId, categorie.CategorieId);
                 }
-                return true;
+                return PostCreated;
             }
             else
             {
-                return false;
+                return null;
             }
         }
 
-        public Task<Post> DeletePost(int id)
+        public async Task<bool> DeletePost(int id)
         {
-            throw new NotImplementedException();
+            var postToDelete = await GetPost(id);
+            if (postToDelete != null)
+            {
+                var PostDeleted = await _repository.Delete(id);
+                if (PostDeleted == null) 
+                {
+                    return false;
+                }
+                return true;
+            }
+            return false;
         }
 
-        public Task<Post> EditPost(int id)
+        public async Task<bool> EditPost(PostUpdateDto postUpdateDto)
         {
-            throw new NotImplementedException();
+            var ExistPost = await _repository.GetById(postUpdateDto.postId);
+            if (ExistPost == null) 
+            {
+                return false;
+            }
+            var postUpdated = await _repository.Update(postUpdateDto);
+            if (postUpdated == null) 
+            {
+                return false;
+            }
+            return true;
         }
 
     }

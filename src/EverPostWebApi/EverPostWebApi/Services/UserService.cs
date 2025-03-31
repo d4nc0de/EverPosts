@@ -9,9 +9,9 @@ namespace EverPostWebApi.Services
     public class UserService : IUserService<User>
     {
         private readonly Utilities _utilities;
-        private readonly IRepository<User, LoginDto,UserDto> _repository;
+        private readonly IRepository<User, LoginDto,UserDto, User> _repository;
 
-        public UserService( Utilities utilities,[FromKeyedServices("UserRepositoryINJ")] IRepository<User, LoginDto,UserDto> repository)
+        public UserService( Utilities utilities,[FromKeyedServices("UserRepositoryINJ")] IRepository<User, LoginDto,UserDto, User> repository)
         {
             _utilities = utilities;
             _repository = repository;

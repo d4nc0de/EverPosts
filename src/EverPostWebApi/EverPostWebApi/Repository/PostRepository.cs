@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EverPostWebApi.Repository
 {
-    public class PostRepository : IRepository<Post, PostGetDto , PostCreateDto>
+    public class PostRepository : IRepository<Post, PostGetDto , PostCreateDto, PostUpdateDto>
     {
         private readonly EverPostContext _everPostContext;
         public PostRepository(EverPostContext Dbcontext)
@@ -14,13 +14,15 @@ namespace EverPostWebApi.Repository
             _everPostContext = Dbcontext;
 
         }
-        public Task<IEnumerable<Post>> Get()
+        public async Task<IEnumerable<Post>> Get(int pageNumber,int PageSize)
         {
-            throw new NotImplementedException();
+            var Posts = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_GetPostsPaginated {pageNumber},{PageSize}").ToListAsync();
+            return Posts;
         }
-        public Task<Post> GetById(int id)
+        public async Task<Post> GetById(int id)
         {
-            throw new NotImplementedException();
+            var Posts = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_GetPostById {id}").ToListAsync();
+            return Posts.FirstOrDefault();
         }
         public Task<Post> GetByFilter(PostGetDto dto)
         {
@@ -37,14 +39,16 @@ namespace EverPostWebApi.Repository
             return Relation.FirstOrDefault();
         }
 
-        public Task<Post> Update(Post entity)
+        public async Task<Post> Update(PostUpdateDto valuesToUpdate)
         {
-            throw new NotImplementedException();
+            var PostDeleted = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_EditPost {valuesToUpdate.postId},{valuesToUpdate.Tittle}, {valuesToUpdate.Description}").ToListAsync();
+            return PostDeleted.FirstOrDefault();
         }
 
-        public Task<Post> Delete(int id)
+        public async Task<Post> Delete(int id)
         {
-            throw new NotImplementedException();
+            var PostDeleted = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_DeletePost {id}").ToListAsync();
+            return PostDeleted.FirstOrDefault();
         }
 
 

@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "qBGTPvGPc2Tdfx+6vXojV9NWUXPjwm//bqSh+I3blgs=",
+  "Hash": "w2pXG3j6tw0aT05tXBknYsev/IvgbirgKXlGzVpbkqI=",
   "Source": "EverPostWebApi",
   "BasePath": "_content/EverPostWebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "EverPostWebApi\\wwwroot",
+      "Source": "EverPostWebApi",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\",
+      "BasePath": "_content/EverPostWebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\Uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+      "SourceId": "EverPostWebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\",
+      "BasePath": "_content/EverPostWebApi",
+      "RelativePath": "Uploads/24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\Uploads\\642ea534-0551-4b97-8e74-dd73a99a654a.jpg",
+      "SourceId": "EverPostWebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\wwwroot\\",
+      "BasePath": "_content/EverPostWebApi",
+      "RelativePath": "Uploads/642ea534-0551-4b97-8e74-dd73a99a654a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\642ea534-0551-4b97-8e74-dd73a99a654a.jpg"
+    }
+  ]
 }

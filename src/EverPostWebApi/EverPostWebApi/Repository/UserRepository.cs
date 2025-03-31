@@ -8,7 +8,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace EverPostWebApi.Repository
 {
-    public class UserRepository : IRepository<User, LoginDto, UserDto>
+    public class UserRepository : IRepository<User, LoginDto, UserDto, User>
     {
         private readonly EverPostContext _everPostContext;
         private readonly ADOHelper _helper;
@@ -34,7 +34,7 @@ namespace EverPostWebApi.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<User>> Get()
+        public Task<IEnumerable<User>> Get(int pageNumber, int PageSize)
         {
             throw new NotImplementedException();
         }

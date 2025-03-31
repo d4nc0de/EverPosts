@@ -25,4 +25,8 @@
     <Folder Include="Validators\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Uploads\24b1371d-7357-4cf3-b0e5-3928564f60e4.jpg" />
+  </ItemGroup>
+
 </Project>

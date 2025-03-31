@@ -33,11 +33,11 @@ namespace EverPostWebApi.Controllers
             var Result = await _userService.RegisterUser(userDto);
             if (!Result)
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = Result });
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
             }
             else
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = Result });
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
             }
         }
 

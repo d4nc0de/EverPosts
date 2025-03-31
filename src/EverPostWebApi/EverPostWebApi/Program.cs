@@ -28,11 +28,11 @@ builder.Services.AddScoped<ADOHelper>();
 
 //services
 builder.Services.AddScoped<IUserService<User>, UserService>();
-builder.Services.AddScoped<IPostService<Post>, PostService>();
+builder.Services.AddScoped<IPostService<Post, PostsPaginatedDTO>, PostService>();
 
 //Repositories
-builder.Services.AddKeyedScoped<IRepository<User, LoginDto,UserDto>, UserRepository>("UserRepositoryINJ");
-builder.Services.AddKeyedScoped<IRepository<Post,PostGetDto,PostCreateDto>, PostRepository>("PostRepositoryINJ");
+builder.Services.AddKeyedScoped<IRepository<User, LoginDto,UserDto, User>, UserRepository>("UserRepositoryINJ");
+builder.Services.AddKeyedScoped<IRepository<Post, PostGetDto, PostCreateDto, PostUpdateDto>, PostRepository>("PostRepositoryINJ");
 
 
 builder.Services.AddAuthentication(config =>
@@ -75,6 +75,8 @@ if (app.Environment.IsDevelopment())
 }
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.UseAuthorization();
