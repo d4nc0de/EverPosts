@@ -22,9 +22,33 @@ namespace EverPostWebApi.Services
         {
             throw new NotImplementedException();
         }
-        public Task<Post> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate)
+        public async Task<bool> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate)
         {
+            var Route = string.Empty;
+            if (imageToUpload.Archivo.Length > 0) 
+            {
+                var ArchiveName = Guid.NewGuid().ToString() + ".jpg";
+                Route = $"Uploads/{ArchiveName}";
+                using (var stream = new FileStream(Route, FileMode.Create)) 
+                {
+                    await imageToUpload.Archivo.CopyToAsync(stream);
+                }
+            }
+            postToCreate.Route = Route;
+            var PostCreated = await _repository.Add(postToCreate);
             
+            if (PostCreated != null)
+            {
+                foreach (Categorie categorie in postToCreate.Categories)
+                {
+                    await _repository.AddRelation(PostCreated.PostId, categorie.CategorieId);
+                }
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public Task<Post> DeletePost(int id)

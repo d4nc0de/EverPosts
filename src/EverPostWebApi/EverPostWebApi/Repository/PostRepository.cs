@@ -28,8 +28,13 @@ namespace EverPostWebApi.Repository
         }
         public async Task<Post> Add(PostCreateDto postToCreate)
         {
-            var postCreated = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_CreatePost {postToCreate.UserId},{postToCreate.Tittle},{postToCreate.Description},{postToCreate.ImageRoute}").ToListAsync();
+            var postCreated = await _everPostContext.Posts.FromSqlInterpolated($"EXEC Sp_CreatePost {postToCreate.UserId},{postToCreate.Tittle},{postToCreate.Description},{postToCreate.Route}").ToListAsync();
             return postCreated.FirstOrDefault();
+        }
+        public async Task<RelPostCategorie> AddRelation(int postId,int categorieId)
+        {
+            var Relation = await _everPostContext.RelPostCategories.FromSqlInterpolated($"EXEC Sp_CategorieRelation {postId},{categorieId}").ToListAsync();
+            return Relation.FirstOrDefault();
         }
 
         public Task<Post> Update(Post entity)

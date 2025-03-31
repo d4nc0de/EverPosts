@@ -23,9 +23,14 @@ builder.Services.AddDbContext<EverPostContext>(options =>
 
 
 // Useful injections
-builder.Services.AddSingleton<Utilities>();
-builder.Services.AddSingleton<ADOHelper>();
+builder.Services.AddScoped<Utilities>();
+builder.Services.AddScoped<ADOHelper>();
+
+//services
 builder.Services.AddScoped<IUserService<User>, UserService>();
+builder.Services.AddScoped<IPostService<Post>, PostService>();
+
+//Repositories
 builder.Services.AddKeyedScoped<IRepository<User, LoginDto,UserDto>, UserRepository>("UserRepositoryINJ");
 builder.Services.AddKeyedScoped<IRepository<Post,PostGetDto,PostCreateDto>, PostRepository>("PostRepositoryINJ");
 
@@ -38,11 +43,11 @@ builder.Services.AddAuthentication(config =>
     {
         config.RequireHttpsMetadata = false;
         config.SaveToken = true;
-        config.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        config.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
             ValidateIssuer = false,
-            ValidateAudience = true,
+            ValidateAudience = false,
             ValidateLifetime = true,
             ClockSkew = TimeSpan.Zero,
             IssuerSigningKey = new SymmetricSecurityKey

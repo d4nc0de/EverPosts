@@ -2,13 +2,13 @@
 
 namespace EverPostWebApi.Services
 {
-    public interface IPostService<Post>
+    public interface IPostService<P>
     {
-        public Task<Post> GetPost(int id);
-        public Task<IEnumerable<Post>> GetAllPosts(int id);
-        public Task<Post> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate );
-        public Task<Post> DeletePost(int id);
-        public Task<Post> EditPost(int id);
+        public Task<P> GetPost(int id);
+        public Task<IEnumerable<P>> GetAllPosts(int id);
+        public Task<bool> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate );
+        public Task<P> DeletePost(int id);
+        public Task<P> EditPost(int id);
         
     }
 }

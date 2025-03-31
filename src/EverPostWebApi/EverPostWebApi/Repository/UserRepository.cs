@@ -48,5 +48,9 @@ namespace EverPostWebApi.Repository
         {
             throw new NotImplementedException();
         }
+        public Task<RelPostCategorie> AddRelation(int obj1, int obj2) 
+        {
+            throw new NotImplementedException();
+        }
     }
 };

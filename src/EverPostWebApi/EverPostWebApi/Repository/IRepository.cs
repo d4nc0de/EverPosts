@@ -8,5 +8,6 @@
         Task<Tentity> Add(Tin dto);
         Task<Tentity> Update(Tentity entity);
         Task<Tentity> Delete(int id);
+        Task<RelPostCategorie> AddRelation(int obj1, int obj2);
     }
 }
