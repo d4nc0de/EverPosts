@@ -14,7 +14,6 @@ public class RelPostCategorie
 
     [ForeignKey("Categorie")]
     public int CategorieId { get; set; }
-    public virtual Categorie Categorie { get; set; }
     [Required]
     [StringLength(3)]
     public string Status { get; set; }

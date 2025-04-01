@@ -4,10 +4,10 @@ using EverPostWebApi.Repository;
 
 namespace EverPostWebApi.Services
 {
-    public class CommentsService : ICommentsService<Comment, DataPaginatedDTO<Comment>>
+    public class CommentsService : ICommentsService<Comment, DataPaginatedDTO<Comment>, CommentCreateDto>
     {
-        private readonly IRepository<Comment, Comment, Comment, Comment> _repository;
-        public CommentsService([FromKeyedServices("CommentRepositoryINJ")] IRepository<Comment, Comment, Comment, Comment> repository)
+        private readonly IRepository<Comment, Comment, CommentCreateDto, Comment> _repository;
+        public CommentsService([FromKeyedServices("CommentRepositoryINJ")] IRepository<Comment, Comment, CommentCreateDto, Comment> repository)
         {
             _repository = repository;
         }
@@ -36,7 +36,7 @@ namespace EverPostWebApi.Services
                 throw new Exception("Ha ocurrido un error obteniendo los comentarios: " + ex.Message);
             }
         }
-        public Task<Comment> AddComment(Comment comment)
+        public Task<Comment> AddComment(CommentCreateDto comment)
         {
             try 
             {

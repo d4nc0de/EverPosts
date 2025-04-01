@@ -28,6 +28,10 @@ namespace EverPostWebApi.Repository
             var usuarios = await _everPostContext.Users.FromSqlInterpolated($"EXEC Sp_GetUserByCredentials {loginDto.Mail},{loginDto.Pass}").ToListAsync();
             return usuarios.FirstOrDefault();
         }
+        public Task<IEnumerable<User>> Get()
+        {
+            throw new NotImplementedException();
+        }
 
         public Task<User> Delete(int id)
         {

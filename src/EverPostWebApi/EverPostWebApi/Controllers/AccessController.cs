@@ -28,32 +28,45 @@ namespace EverPostWebApi.Controllers
 
 
         [HttpPost("Register")]
-        public async Task<ActionResult> RegisterUser(UserDto userDto)
+        public async Task<ActionResult<BaseResponse<bool>>> RegisterUser(UserDto userDto)
         {
-            var Result = await _userService.RegisterUser(userDto);
-            if (!Result)
+            var result = await _userService.RegisterUser(userDto);
+            var response = new BaseResponse<bool>
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
-            }
-            else
+                Success = result,
+                Message = result ? "Usuario registrado exitosamente." : "Error al registrar el usuario.",
+                Data = result
+            };
+
+            if (!result)
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
+                response.Errors.Add("No se pudo completar el registro.");
             }
+
+            return StatusCode(StatusCodes.Status200OK, response);
         }
 
         [HttpPost("Login")]
-        public async Task<ActionResult> Login(LoginDto loginDto)
+        public async Task<ActionResult<BaseResponse<string>>> Login(LoginDto loginDto)
         {
             var userFind = await _userService.Login(loginDto);
+            var response = new BaseResponse<string>();
 
             if (userFind == null)
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false, token = "" });
+                response.Success = false;
+                response.Message = "Credenciales incorrectas.";
+                response.Data = "";
+                response.Errors.Add("Usuario o contraseña incorrectos.");
             }
-            else 
+            else
             {
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true, token = _userService.GenerateJWT(userFind), userFind.UserName });
+                response.Success = true;
+                response.Message = "Inicio de sesión exitoso.";
+                response.Data = await _userService.GenerateJWT(userFind);
             }
+
+            return StatusCode(StatusCodes.Status200OK, response);
         }
     }
 }

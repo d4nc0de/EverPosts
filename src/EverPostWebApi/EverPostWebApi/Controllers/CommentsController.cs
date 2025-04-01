@@ -13,8 +13,8 @@ namespace EverPostWebApi.Controllers
     [ApiController]
     public class CommentsController : ControllerBase
     {
-        private ICommentsService<Comment, DataPaginatedDTO<Comment>> _commentService;
-        public CommentsController(ICommentsService<Comment, DataPaginatedDTO<Comment>> postService)
+        private ICommentsService<Comment, DataPaginatedDTO<Comment>, CommentCreateDto> _commentService;
+        public CommentsController(ICommentsService<Comment, DataPaginatedDTO<Comment>, CommentCreateDto> postService)
         {
             _commentService = postService;
         }
@@ -51,12 +51,12 @@ namespace EverPostWebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Comment>> CreateComment(Comment comment) 
+        public async Task<ActionResult<Comment>> CreateComment(CommentCreateDto commentToCreate) 
         {
             var response = new BaseResponse<Comment>();
             try
             {
-                var commentInserted = await _commentService.AddComment(comment);
+                var commentInserted = await _commentService.AddComment(commentToCreate);
                 if (commentInserted == null)
                 {
                     response.Success = false;

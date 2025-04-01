@@ -5,6 +5,7 @@
         Task<IEnumerable<Tentity>> GetPaginated(int pageNumber, int PageSize);
         Task<IEnumerable<Tentity>> GetPaginatedFilter(int filterId,int pageNumber, int PageSize);
         Task<Tentity> GetById(int id );
+        Task<IEnumerable<Tentity>> Get();
         Task<Tentity> GetByFilter(Tg dto);
         Task<Tentity> Add(Tin dto);
         Task<Tentity> Update(Te entity);

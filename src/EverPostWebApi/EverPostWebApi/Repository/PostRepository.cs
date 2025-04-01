@@ -55,6 +55,10 @@ namespace EverPostWebApi.Repository
         {
             throw new NotImplementedException();
         }
+        public Task<IEnumerable<Post>> Get()
+        {
+            throw new NotImplementedException();
+        }
 
 
     }

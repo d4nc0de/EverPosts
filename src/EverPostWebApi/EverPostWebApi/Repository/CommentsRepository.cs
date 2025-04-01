@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EverPostWebApi.Repository
 {
-    public class CommentsRepository : IRepository<Comment, Comment, Comment, Comment>
+    public class CommentsRepository : IRepository<Comment, Comment, CommentCreateDto, Comment>
     {
         private readonly EverPostContext _everPostContext;
         public CommentsRepository(EverPostContext Dbcontext)
@@ -22,7 +22,7 @@ namespace EverPostWebApi.Repository
             var Coments = await _everPostContext.Comments.FromSqlInterpolated($"EXEC Sp_GetCommentsPagined {filterId},{pageNumber},{PageSize}").ToListAsync();
             return Coments;
         }
-        public async Task<Comment> Add(Comment comment)
+        public async Task<Comment> Add(CommentCreateDto comment)
         {
             var Coments = await _everPostContext.Comments.FromSqlInterpolated($"EXEC Sp_CreateComment {comment.Content},{comment.PostId},{comment.UserId}").ToListAsync();
             return Coments.FirstOrDefault();
@@ -50,6 +50,10 @@ namespace EverPostWebApi.Repository
         }
 
         public Task<Comment> Update(Comment entity)
+        {
+            throw new NotImplementedException();
+        }
+        public Task<IEnumerable<Comment>> Get()
         {
             throw new NotImplementedException();
         }

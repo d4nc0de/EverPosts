@@ -10,11 +10,10 @@ public class Post
     [Required]
     [ForeignKey("User")]
     public int UserId { get; set; }
-    public virtual User User { get; set; }
 
     [Required]
     [StringLength(200)]
-    public string Title { get; set; }  // Corregí 'Tittle' a 'Title'
+    public string Title { get; set; }  
     [Required]
     [StringLength(200)]
     public string Description { get; set; }
