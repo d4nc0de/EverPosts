@@ -21,7 +21,7 @@ namespace EverPostWebApi.Controllers
             _postService = postService;
         }
         [HttpGet]
-        public async Task<ActionResult<DataPaginatedDTO<Post>>> GetPosts(PaginatorDto paginatorDto) 
+        public async Task<ActionResult<BaseResponse<DataPaginatedDTO<Post>>>> GetPosts(PaginatorDto paginatorDto) 
         {
             var response = new BaseResponse<DataPaginatedDTO<Post>>();
             try

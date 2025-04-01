@@ -1,0 +1,23 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente en la pantalla */
+}
+
+.form-custom {
+    width: 100%;
+    max-width: 250px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
