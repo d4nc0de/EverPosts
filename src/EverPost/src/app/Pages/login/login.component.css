@@ -1,8 +1,10 @@
+@import "primeflex/primeflex.css";
+
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Centra verticalmente en la pantalla */
+    height: 100vh;
 }
 
 .form-custom {
@@ -14,6 +16,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+}
+::ng-deep .p-button {
+  background-color: #2196F3 !important; /* Azul */
+  border-color: #2196F3 !important;
+  color: white !important;
 }
 
 body {

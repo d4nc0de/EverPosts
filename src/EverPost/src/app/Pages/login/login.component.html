@@ -1,15 +1,38 @@
+<div class="flex align-items-center justify-content-center min-h-screen login-container">
+  <div class="grid w-full h-screen">
+      
+      <!-- Sección Izquierda (Formulario) -->
+      <div class="col-6 flex align-items-center justify-content-center">
+          <p-card [style]="{ width: '40rem',height: '40rem', overflow: 'hidden' }"class="login-card">
+              <ng-template #title> Login </ng-template>
+              
+              <form class="form-custom p-fluid" [formGroup]="formLogin">
+                  <div class="p-inputgroup">
+                      <span class="p-inputgroup-addon">
+                          <i class="pi pi-envelope"></i>
+                      </span>
+                      <input type="email" formControlName="correo" pInputText placeholder="Email" class="custom-input" />
+                  </div>
 
+                  <div class="p-inputgroup">
+                      <span class="p-inputgroup-addon">
+                          <i class="pi pi-lock"></i>
+                      </span>
+                      <p-password formControlName="clave" [toggleMask]="true" placeholder="Password" class="custom-input"/>
+                  </div>
 
-<div class="card-container">
-    <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
-        <ng-template #title> Login </ng-template>
-        <form class="form-custom" [formGroup]="formLogin">
-             <input type="text"  formControlName="correo" pInputText  />
-            <p-password formControlName="clave" [toggleMask]="true" placeholder="Contraseña" />
-            <div class="flex">
-                <p-button label="Login" (click)="Login()" />
-                <p-button label="Register" variant="text" [raised]="true" (click)="register()"/>
-            </div>
-        </form>
-    </p-card>
+                  <div class="flex justify-content-between mt-3">
+                      <p-button label="Login" class="p-button-primary custom-button" (click)="Login()" />
+                      <p-button label="Register" class="p-button-text custom-text-button" (click)="register()" />
+                  </div>
+              </form>
+          </p-card>
+      </div>
+
+      <!-- Sección Derecha (Imagen) -->
+      <div class="col-6 flex align-items-center justify-content-center login-image-container">
+          <img src="assets/login-image.png" alt="Login Illustration" class="login-image">
+      </div>
+
+  </div>
 </div>
