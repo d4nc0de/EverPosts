@@ -21,7 +21,8 @@ export class LoginComponent {
   private accesService = inject(AccessService);
   private router = inject(Router);
   public formBuild = inject(FormBuilder);
-
+  loginImagePath = '../../Images/LoginImage.jpg'; 
+  
   public formLogin: FormGroup = this.formBuild.group({
     correo: ['', [Validators.required, Validators.email]],
     clave: ['', Validators.required]
