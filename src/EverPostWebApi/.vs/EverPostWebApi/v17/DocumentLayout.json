@@ -198,21 +198,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CommentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\CommentsController.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Controllers\\CommentsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "EverPostWebApi\\Controllers\\CommentsController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowBkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T01:34:00.817Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -293,6 +280,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Program.cs",
+              "RelativeToolTip": "EverPostWebApi\\Program.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAMwFUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:53:32.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "EverPostWebApi\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "EverPostWebApi\\Controllers\\CommentsController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowBkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:34:00.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ParametersController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Controllers\\ParametersController.cs",
@@ -302,19 +315,6 @@
               "ViewState": "AQIAABsAAAAAAAAAAAAowCYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T02:13:53.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Program.cs",
-              "RelativeDocumentMoniker": "EverPostWebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\EverPosts\\src\\EverPostWebApi\\EverPostWebApi\\Program.cs",
-              "RelativeToolTip": "EverPostWebApi\\Program.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAMwFUAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T07:53:32.767Z",
               "EditorCaption": ""
             },
             {

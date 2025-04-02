@@ -1,1 +1,28 @@
-<p>register works!</p>
+<div class="background-container" 
+     style="background: url('/assets/images/LoginImage.jpg') center/cover no-repeat; height: 100vh;">
+     <div class="absolute w-full h-full bg-black-alpha-50"></div>
+     <div class="flex justify-content-center relative z-2" style="height: 100vh;" >
+        <div class="flex justify-content-center align-items-center" style="width: 100vh;">
+            <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+                <div class="text-center mb-5">
+                    <img src="assets/images/logo.png" alt="Image" height="150" class="mb-3">
+                    <div class="text-900 text-3xl font-medium mb-3">EverPost</div>
+                    <span class="text-600 font-medium line-height-3">Do you already have an account?</span>
+                    <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" (click)="volver()">Sing In</a>
+                </div>
+                <div>
+                    <form [formGroup]="formRegister">
+                        <label for="Username" class="block text-900 font-medium mb-2">Username</label>
+                        <input  type="text" placeholder="Username" pInputText class="w-full mb-3" formControlName="userName">
+                        <label for="email1" class="block text-900 font-medium mb-2">Email</label>
+                        <input type="text" placeholder="Email address" pInputText class="w-full mb-3" formControlName="correo">
+                        <label for="password1" class="block text-900 font-medium mb-2">Password</label>
+                        <input  type="password" placeholder="Password" pInputText class="w-full mb-3" formControlName="clave">
+                        <button pButton pRipple label="Register" icon="pi pi-user" class="w-full" (click)="register()"></button>     
+                    </form>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+</div>
