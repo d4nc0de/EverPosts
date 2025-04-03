@@ -16,7 +16,7 @@ namespace EverPostWebApi.Services
             try
             {
                 var comments = await _repository.GetPaginatedFilter(paginatorDto.filterId,paginatorDto.Page,paginatorDto.PageSize);
-                if (comments.Count() == 0 || comments.Count() == null)
+                if (comments.Count() == 0 || comments == null)
                 {
                     return null;
                 }

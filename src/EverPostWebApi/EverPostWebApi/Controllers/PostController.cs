@@ -20,7 +20,7 @@ namespace EverPostWebApi.Controllers
         {
             _postService = postService;
         }
-        [HttpGet]
+        [HttpPost("GetPosts")]
         public async Task<ActionResult<BaseResponse<DataPaginatedDTO<Post>>>> GetPosts(PaginatorDto paginatorDto) 
         {
             var response = new BaseResponse<DataPaginatedDTO<Post>>();

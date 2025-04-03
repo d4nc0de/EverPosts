@@ -57,5 +57,9 @@ namespace EverPostWebApi.Repository
         {
             throw new NotImplementedException();
         }
+        public Task<IEnumerable<Comment>> GetByRelation(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

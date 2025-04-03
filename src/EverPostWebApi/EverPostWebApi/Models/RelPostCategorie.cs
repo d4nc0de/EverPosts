@@ -10,7 +10,6 @@ public class RelPostCategorie
 
     [ForeignKey("Post")]
     public int PostId { get; set; }
-    public virtual Post Post { get; set; }
 
     [ForeignKey("Categorie")]
     public int CategorieId { get; set; }
