@@ -16,6 +16,6 @@ export class ParametersService {
   constructor() { }
 
   GetCategories(): Observable<BaseResponse<Categorie[]>> {
-    return this.http.get<BaseResponse<Categorie[]>>(`${this.baseUrl}Post/Categorie`);
+    return this.http.get<BaseResponse<Categorie[]>>(`${this.baseUrl}Parameters/Categorie`);
   }
 }

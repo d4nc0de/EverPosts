@@ -8,17 +8,20 @@ import { RequestPaginatedData } from '../../Interfaces/RequestPaginatedData';
 import { DialogModule } from 'primeng/dialog';
 import { PostEditComponent } from '../post-edit/post-edit.component';
 import { DialogService, DynamicDialogModule, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { CardModule } from 'primeng/card';
+import { PostCreateComponent } from '../post-create/post-create.component';
 
 @Component({
   selector: 'app-list-posts',
-  imports: [CarouselModule,TagModule,ButtonModule,DialogModule,DynamicDialogModule],
+  imports: [CarouselModule,TagModule,ButtonModule,DialogModule,DynamicDialogModule,CardModule],
   templateUrl: './list-posts.component.html',
   styleUrl: './list-posts.component.css',
-  providers: [PostService,DialogService],
+  providers: [PostService,DialogService,CardModule],
 })
 export class ListPostsComponent implements OnInit{
   public Posts:Post[] = [];
-  ref: DynamicDialogRef | undefined;
+  refUpdate: DynamicDialogRef | undefined;
+  refCreate: DynamicDialogRef | undefined;
 
   constructor(private postService: PostService, public dialogService: DialogService) {}
   
@@ -53,7 +56,7 @@ export class ListPostsComponent implements OnInit{
       }
     });
   }
-  show(post:Post) {
+  showUpdate(post:Post) {
     const isMobileOrTablet = window.innerWidth <= 768;
  
     let widthResponsive;
@@ -63,8 +66,8 @@ export class ListPostsComponent implements OnInit{
       widthResponsive = '40%';
     }
     
-    this.ref = this.dialogService.open(PostEditComponent, {
-        header: 'Editar Post',
+    this.refUpdate = this.dialogService.open(PostEditComponent, {
+        header: 'Edit Post',
         width: widthResponsive,
         data:post,
         contentStyle: { overflow: 'auto' },
@@ -72,12 +75,38 @@ export class ListPostsComponent implements OnInit{
         closable: true
     });
 
-    this.ref.onClose.subscribe((respone: boolean) => {
+    this.refUpdate.onClose.subscribe((respone: boolean) => {
         if (respone) {
             this.GetPost();
         }
     });
   }
+
+  showCreate() {
+    const isMobileOrTablet = window.innerWidth <= 768;
+ 
+    let widthResponsive;
+    if (isMobileOrTablet) {
+      widthResponsive = '90%';
+    } else {
+      widthResponsive = '40%';
+    }
+    
+    this.refCreate = this.dialogService.open(PostCreateComponent, {
+        header: 'Create Post',
+        width: widthResponsive,
+        contentStyle: { overflow: 'auto' },
+        baseZIndex: 10000,
+        closable: true
+    });
+
+    this.refCreate.onClose.subscribe((respone: boolean) => {
+        if (respone) {
+            this.GetPost();
+        }
+    });
+  }
+  
 
 
 }

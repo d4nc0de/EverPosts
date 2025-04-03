@@ -1,11 +1,19 @@
-<span class="p-text-secondary block mb-8" ></span>
-<form [formGroup]="formUpdatePost">
-    <div class="flex items-center gap-4 mb-4">
-        <input type="text" pInputText formControlName="title" />
+
+
+<form [formGroup]="formUpdatePost" >
+    <div class="grid formgrid">
+        <div class="field col-12">
+            <label for="title">Title</label>
+            <input id="title" type="text" pInputText formControlName="title" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col-12">
+            <label for="description">Description</label>
+            <input id="description" type="text" pInputText formControlName="description" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
     </div>
-    <div class="flex items-center gap-4 mb-8">
-        <input type="text" pInputText formControlName="description" />
+    <div class="flex justify-content-end w-full ">
+        <p-button styleClass="p-button-primary" (onClick)="UpdatePost()" label="Submit"/>
     </div>
-    <p-button (onClick)="UpdatePost()" label="Submit"/>
+   
 </form>
 

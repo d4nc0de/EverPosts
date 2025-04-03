@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 import { BaseResponse } from '../Interfaces/BaseResponse';
 import { Post } from '../Interfaces/Post';
 import { UploadImage } from '../Interfaces/UploadImage';
-import { PostCreateDto } from '../Interfaces/PostToCreate';
+import { PostCreateDto } from '../Interfaces/PostCreateDto';
 import { PostToUpdate } from '../Interfaces/PostToUpdate';
 
 @Injectable({
@@ -24,15 +24,15 @@ export class PostService {
       return this.http.post<BaseResponse<PaginatedData<Post>>>(`${this.baseUrl}Post/GetPosts`,objeto)    
   }
 
-  AddPost(image: UploadImage, postToCreate: PostCreateDto): Observable<BaseResponse<Post>> {
+  AddPost(image:File, postToCreate: PostCreateDto): Observable<BaseResponse<Post>> {
     const formData: FormData = new FormData();
     
 
-    formData.append('image', image.file, image.file.name);
+    formData.append('image', image, image.name);
 
     formData.append('postToCreateJson', JSON.stringify(postToCreate));
 
-    return this.http.post<BaseResponse<Post>>(`${this.baseUrl}Post/AddPost`, formData);
+    return this.http.post<BaseResponse<Post>>(`${this.baseUrl}Post/`, formData);
   }
 
   DeletePost(PostId:number): Observable<BaseResponse<string>>{

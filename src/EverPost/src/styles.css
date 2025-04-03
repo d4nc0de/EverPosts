@@ -13,18 +13,18 @@
     --background-color: #edeef2; /* Color de fondo */
 }
 /* Sobrescribir colores globales para botones */
-.p-button {
+.p-button-primary {
     background-color: var(--primary-color) !important;
     color: #ffffff !important;
     border: 2px solid var(--primary-color) !important; /* Borde del botón */
     border-radius: 4px; /* Si quieres que tenga bordes redondeados */
   }
-  .p-button:hover {
+  .p-button-primary:hover {
     background-color: var(--secondary-color) !important;
     border: 2px solid var(--secondary-color) !important;
   }
   
-  .p-button:active {
+  .p-button-primary:active {
     background-color: var(--accent-color) !important;
   }
   
@@ -46,7 +46,7 @@
     color: var(--accent-color) !important;
   }
   
-  .p-button:active {
+  .p-button-primary:active {
     background-color: var(--accent-color) !important;
     border: 2px solid var(--accent-color) !important; /* Cambiar el borde en active */
   }
@@ -84,12 +84,12 @@
 }
 
 /* Estilo para los botones dentro del sidebar */
-.bg-primary .p-button {
+.p-button-primary {
   background-color: var(--secondary-color) !important;
   border: 2px solid var(--secondary-color) !important;
 }
 
-.bg-primary .p-button:hover {
+.p-button-primary:hover {
   background-color: var(--accent-color) !important;
   border: 2px solid var(--accent-color) !important;
 }

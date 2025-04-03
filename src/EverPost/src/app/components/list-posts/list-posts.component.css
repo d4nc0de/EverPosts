@@ -14,3 +14,7 @@
         }
     }
 }
+.controlHeigth{
+    height: 250px;
+    width: 25rem !important;
+}

@@ -24,11 +24,11 @@
                 <div *ngIf="item.image" class="flex flex-col items-center gap-4">
                     <img [src]="item.image" alt="megamenu-demo" class="w-full" />
                     <span>{{ item.subtext }}</span>
-                    <p-button [label]="item.label" [outlined]="true"></p-button>
+                    <p-button styleClass="p-button-primary"[label]="item.label" [outlined]="true"></p-button>
                 </div>
             </ng-template>
             <ng-template #end>
-                <p-button label="Sing out" (click)="Logout()"  class="mx-auto" variant="text" [raised]="true" severity="danger" />
+                <p-button styleClass="p-button-primary"  label="Sing out" (click)="Logout()"  class="mx-auto" variant="text" [raised]="true" severity="danger" />
             </ng-template>
         </p-megamenu>
     </div>

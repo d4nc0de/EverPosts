@@ -64,9 +64,4 @@ export class PostEditComponent {
         }
       });
     }
-
-    close(){
-      this.ref.close(true);
-    }
-
 }

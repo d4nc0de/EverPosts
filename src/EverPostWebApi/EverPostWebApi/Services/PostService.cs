@@ -48,20 +48,20 @@ namespace EverPostWebApi.Services
             }
             return null;
         }
-        public async Task<Post> AddPost(UploadImage imageToUpload, PostCreateDto postToCreate)
+        public async Task<Post> AddPost(IFormFile imageToUpload, PostCreateDto postToCreate)
         {
             try
             {
                 var Route = string.Empty;
                 var RelativeRoute = string.Empty;
-                if (imageToUpload.Archivo.Length > 0)
+                if (imageToUpload.Length > 0)
                 {
                     var ArchiveName = Guid.NewGuid().ToString() + ".jpg";
                     Route = $"wwwroot/Uploads/{ArchiveName}";
                     RelativeRoute = $"/Uploads/{ArchiveName}";
                     using (var stream = new FileStream(Route, FileMode.Create))
                     {
-                        await imageToUpload.Archivo.CopyToAsync(stream);
+                        await imageToUpload.CopyToAsync(stream);
                     }
                 }
                 postToCreate.Route = RelativeRoute;
