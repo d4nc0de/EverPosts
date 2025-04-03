@@ -21,7 +21,7 @@ export class PostService {
   constructor() { }
 
   GetPosts(objeto:RequestPaginatedData): Observable<BaseResponse<PaginatedData<Post>>>{
-      return this.http.get<BaseResponse<PaginatedData<Post>>>(`${this.baseUrl}Post/`,{params:objeto as any})    
+      return this.http.post<BaseResponse<PaginatedData<Post>>>(`${this.baseUrl}Post/GetPosts`,objeto)    
   }
 
   AddPost(image: UploadImage, postToCreate: PostCreateDto): Observable<BaseResponse<Post>> {

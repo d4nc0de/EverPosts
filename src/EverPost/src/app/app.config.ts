@@ -4,8 +4,9 @@ import{providePrimeNG} from 'primeng/config'
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import Aura from '@primeng/themes/Aura';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { authInterceptor } from './custom/auth.interceptor';
 
 
 export const appConfig: ApplicationConfig = {
@@ -19,7 +20,7 @@ export const appConfig: ApplicationConfig = {
         preset: Aura
       }
     }),
-    provideHttpClient(),
-    provideAnimationsAsync()
+    provideHttpClient(withInterceptors([authInterceptor])),
+    provideAnimationsAsync(),
   ]
 };

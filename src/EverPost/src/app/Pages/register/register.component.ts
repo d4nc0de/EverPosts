@@ -29,7 +29,10 @@ export class RegisterComponent {
   });
 
   register(){
-    if(this.formRegister.invalid) return;
+    if (this.formRegister.invalid) {
+      alert("Por favor, complete todos los campos correctamente.");
+      return;
+    }
 
     const objeto:User = {
       Name: this.formRegister.value.userName,

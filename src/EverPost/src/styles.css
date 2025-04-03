@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeflex/primeflex.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import "primeicons/primeicons.css";
 * {
     font-family: 'Roboto', sans-serif;
   }
@@ -74,7 +74,35 @@
   body {
     background-color: var(--background-color);
     font-family: 'Roboto', sans-serif;
+    margin: 0;
   }
 
-  
+  /* Estilos para el sidebar */
+.bg-primary {
+  background-color: var(--primary-color) !important; /* Color de fondo */
+  color: #ffffff !important; /* Color del texto */
+}
+
+/* Estilo para los botones dentro del sidebar */
+.bg-primary .p-button {
+  background-color: var(--secondary-color) !important;
+  border: 2px solid var(--secondary-color) !important;
+}
+
+.bg-primary .p-button:hover {
+  background-color: var(--accent-color) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* Avatar dentro del sidebar */
+.bg-primary .p-avatar {
+  border: 3px solid var(--accent-color); /* Borde de avatar con color de acento */
+}
+
+/* Ajuste para que el sidebar ocupe toda la altura */
+.h-screen {
+  height: 100vh; /* 100% de la pantalla */
+}
+
+
 

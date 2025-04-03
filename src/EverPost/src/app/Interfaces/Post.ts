@@ -1,10 +1,10 @@
 export interface Post{
-    PostId:number,
-    UserId:number, 
-    Title:string,
-    Description:string,
-    DateCreated:string | Date, 
-    Status:string,
-    TotalComments:number, 
-    ImageRoute:string
+    postId:number,
+    userId:number, 
+    title:string,
+    description:string,
+    dateCreated:string | Date, 
+    status:string,
+    totalComments:number, 
+    imageRoute:string
 }
