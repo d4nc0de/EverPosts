@@ -40,6 +40,6 @@ export class PostService {
   }
 
   UpdatePost(postUpdateDto: PostToUpdate): Observable<BaseResponse<string>> {
-    return this.http.put<BaseResponse<string>>(`${this.baseUrl}Post/UpdatePost`, postUpdateDto);
+    return this.http.put<BaseResponse<string>>(`${this.baseUrl}Post/`, postUpdateDto);
   }
 }

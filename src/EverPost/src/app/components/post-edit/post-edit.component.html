@@ -1,0 +1,11 @@
+<span class="p-text-secondary block mb-8" ></span>
+<form [formGroup]="formUpdatePost">
+    <div class="flex items-center gap-4 mb-4">
+        <input type="text" pInputText formControlName="title" />
+    </div>
+    <div class="flex items-center gap-4 mb-8">
+        <input type="text" pInputText formControlName="description" />
+    </div>
+    <p-button (onClick)="UpdatePost()" label="Submit"/>
+</form>
+

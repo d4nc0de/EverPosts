@@ -1,4 +1,4 @@
-<div style="height: 100vh;" class="grid">
+<div style="min-height: 100vh; width: 100%" class="grid">
     <div class="col-2">
         <p-megamenu [model]="items"  orientation="vertical" [style]="{ 'border-radius': '3rem', display: 'flex' ,height: '100%'}"  styleClass="p-4 bg-surface-0 dark:bg-surface-900">
             <ng-template #start>
@@ -8,7 +8,7 @@
                 </svg>
             </ng-template>
             <ng-template #item let-item >
-                <a *ngIf="item.root" pRipple class="flex items-center justify-content-center cursor-pointer px-4 py-2 overflow-hidden relative font-semibold text-lg uppercase" style="border-radius: 2rem">
+                <a *ngIf="item.root" pRipple class="flex items-center justify-content-left cursor-pointer px-4 py-2 overflow-hidden relative font-semibold text-lg uppercase" style="border-radius: 2rem">
                     <i [ngClass]="item.icon"></i>
                     <span class="ml-2">{{ item.label }}</span>
                 </a>
@@ -28,7 +28,7 @@
                 </div>
             </ng-template>
             <ng-template #end>
-                <p-button label="Sing out"  class="mx-auto" variant="text" [raised]="true" severity="danger" />
+                <p-button label="Sing out" (click)="Logout()"  class="mx-auto" variant="text" [raised]="true" severity="danger" />
             </ng-template>
         </p-megamenu>
     </div>

@@ -42,7 +42,7 @@ export class RegisterComponent {
     this.accesService.register(objeto).subscribe({
       next: (data) =>{
         if(data.success){
-          this.router.navigate(['Home']);
+          this.router.navigate(['Post']);
         }else{
           alert("No fue posible realizar el registro.");
         }

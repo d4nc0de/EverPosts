@@ -19,6 +19,7 @@ import { MegaMenuItem } from 'primeng/api';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
+    private router = inject(Router);
     items: MegaMenuItem[] | undefined;
 
 
@@ -38,6 +39,11 @@ export class HomeComponent implements OnInit{
                 root: true
             }
         ];
+    }
+
+    Logout() {
+        localStorage.setItem("token","");
+        this.router.navigate(['']);
     }
   
 }
