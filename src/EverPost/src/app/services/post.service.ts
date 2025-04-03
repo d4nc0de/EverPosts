@@ -28,7 +28,7 @@ export class PostService {
     const formData: FormData = new FormData();
     
 
-    formData.append('image', image, image.name);
+    formData.append('Archivo', image, image.name);
 
     formData.append('postToCreateJson', JSON.stringify(postToCreate));
 

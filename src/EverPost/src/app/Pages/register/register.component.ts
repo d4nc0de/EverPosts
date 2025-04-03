@@ -42,13 +42,13 @@ export class RegisterComponent {
     this.accesService.register(objeto).subscribe({
       next: (data) =>{
         if(data.success){
-          this.router.navigate(['Post']);
+          this.router.navigate(['Home/Post']);
         }else{
           alert("No fue posible realizar el registro.");
         }
       },
       error: (error) => {
-        console.log("Error en el login:", error.message);
+        alert("Error al registrarse")
       }
     })  
   }

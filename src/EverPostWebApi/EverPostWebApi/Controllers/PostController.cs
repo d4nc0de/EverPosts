@@ -52,7 +52,7 @@ namespace EverPostWebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Post>> AddPost([FromForm] IFormFile image, [FromForm] string postToCreateJson) 
+        public async Task<ActionResult<Post>> AddPost([FromForm] UploadImage image, [FromForm] string postToCreateJson) 
         {
             var response = new BaseResponse<Post>();
             try
@@ -62,7 +62,7 @@ namespace EverPostWebApi.Controllers
                     PropertyNameCaseInsensitive = true
                 });
 
-                var postInserted = await _postService.AddPost(image, postToCreate);
+                var postInserted = await _postService.AddPost(image.Archivo, postToCreate);
                 if (postInserted != null)
                 {
                     response.Success = true;
