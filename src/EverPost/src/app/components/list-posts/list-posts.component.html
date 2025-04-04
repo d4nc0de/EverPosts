@@ -1,12 +1,16 @@
 <div class="flex mb-2 gap-3 justify-content-end" >
     <p-button icon="pi pi-plus" label="Create"(click)="showCreate()" styleClass="p-button-primary" />
 </div>
-<div class=" grid ">
+<div class=" grid justi ">
     @for (post of Posts; track post){
         <p-card class="col-12 md:col-4">
-            <ng-template #header>
-                <img alt="Card" class="w-full controlHeigth" src="https://localhost:7109{{post.imageRoute }}" />
+            <ng-template  #header>
+                <div class="flex justify-content-center">
+                    <img alt="Card" class="w-full controlHeigth" style="object-fit: contain;" src="https://localhost:7109{{post.imageRoute }}" />       
+                </div>
             </ng-template>
+            
+            
             <ng-template #title> {{post.title}}</ng-template>
             <p>
                 {{post.description}}
